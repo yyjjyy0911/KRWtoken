@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toast</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+    body{font-family: 'Noto Sans KR', sans-serif;}
+
+
+    #toast_btn {
+      display: block;
+      margin: 200px auto;
+      padding: 10px 20px;
+      background-color: royalblue;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    #toast_btn:hover {
+      box-shadow: 3px 4px 11px 0px #00000040;
+    }
+    
+    /*토스트 메시지*/
+    #toast_message {
+      width: 400px;height: 50px;background: #191919;border-radius: 30px;
+      position: fixed;left: 0;right: 0;top: 0px;z-index: 200;margin: auto;
+      transition: all 0.5s;
+      box-shadow: 3px 4px 11px 0px #00000040;
+      opacity: 0;
+      display: flex;justify-content: center;align-items: center;
+    }
+    #toast_message img{width: 24px;height: 24px;position: absolute;left: 20px;}
+    #toast_message p{color: #fff;text-align: center;line-height: 50px;font-size: 14px;}
+    
+    /*토스트 메시지 활성화 되었을 때*/
+    #toast_message.active {
+        opacity: 100%;
+        top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="toast_message">
+    <img src="./images/information.svg" alt="information">
+    <p>지갑주소를 확인해주세요.</p>
+  </div>
+  
+  <button id="toast_btn" type="button">클릭하면 토스트 메시지가 나옵니다!</button>
+
+
+  <script>
+    //1. 토스트 메시지, 버튼요소를 변수에 대입
+    let toastMessage = document.getElementById('toast_message');
+    let toastBtn = document.getElementById('toast_btn');
+
+    //2. 토스트 메시지 노출-사라짐 함수 작성
+    function toastOn(){
+        toastMessage.classList.add('active');
+        setTimeout(function(){
+            toastMessage.classList.remove('active');
+        },1500);
+    }
+
+    //3. 토스트 버튼에 이벤트 연결
+    toastBtn.addEventListener('click',function(){
+        toastOn()
+    });
+  </script>
+</body>
+</html>

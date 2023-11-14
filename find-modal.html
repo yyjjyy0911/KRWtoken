@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>find-modal</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+    body{font-family: 'Noto Sans KR', sans-serif;}
+
+    
+    /* alert */
+    #contents .box{width: 600px;height: 600px;background: #fff;position: fixed;top: 0px;bottom: 0;left: 0;right: 0;margin: auto;z-index: 50;padding: 124px 0 126px;}
+    
+    #contents .box a{width: 182px;margin: auto;}
+    #contents .box a img{width: 100%;max-width: 100%;}
+
+    #contents .box .text{margin: 60px auto 70px;text-align: center;}
+    #contents .box .text h3{font-size: 24px;margin-bottom: 16px;}
+    #contents .box .text p{color: #EA3323;opacity: 1;}
+    
+    #contents .box .shape{display: flex;justify-content: center;margin-bottom: 90px;}
+    #contents .box .shape > div{width: 40px;height: 30px;margin-right: 20px;display: flex;align-items: center;justify-content: center;}
+    #contents .box .shape > div:last-of-type{margin-right: 0;}
+    #contents .box .shape > div .ellipse{width: 30px;height: 30px;border-radius: 100px;background: #000;}
+    #contents .box .shape > div .line{width: 40px;height: 6px;background: #000;}
+
+    #contents .box > a{text-align: center;text-decoration: underline;}
+
+    #contents .contents-layer{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.7);
+      z-index: 10;}
+  </style>
+</head>
+<body>
+  <div id="contents">
+    <div class="box">
+      <a href="./index.html"><img src="./images/KRWTOKEN_logo.svg" alt="logo"></a>
+      <div class="text">
+        <h3>비밀번호 입력</h3>
+        <!-- <h3>비밀번호 확인</h3> -->
+        <p>비밀번호가 일치하지 않습니다.</p>
+      </div>
+
+      <div class="shape">
+        <div><div class="ellipse"></div></div>
+        <div><div class="ellipse"></div></div>
+        <div><div class="line"></div></div>
+        <div><div class="line"></div></div>
+        <div><div class="line"></div></div>
+        <div><div class="line"></div></div>
+      </div>
+
+      <a href="#">비밀번호 재설정</a>
+    </div>
+    <div class="contents-layer"></div>
+  </div>
+
+
+  <script>
+    const modal = document.querySelector(".contents-layer");
+    modal.addEventListener('click', function() {
+      document.querySelector('p').style.opacity = 1;
+    })
+  </script>
+</body>
+</html>

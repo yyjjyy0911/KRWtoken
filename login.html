@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <script defer src="./js/page.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <section>
+      <h2><a href="./index.html"><img src="./images/KRWTOKEN_logo.svg" alt="logo"></a></h2>
+      <div class="contents-box">
+        <div class="text-box">
+          <input type="number" placeholder="휴대폰 번호" onfocus="this.placeholder = ''" onblur="this.placeholder = '휴대폰 번호'">
+        </div>
+        <div class="text-box box2">
+          <input type="password" placeholder="비밀번호" onfocus="this.placeholder = ''" onblur="this.placeholder = '비밀번호'">
+        </div>
+        <div class="save">
+          <button><img src="./images/check-circle.svg" alt="check-circle"></button>
+          <p>휴대폰 번호 저장</p>
+        </div>
+        <button class="tost-btn">
+          <p>로그인</p>
+        </button>
+        <div class="personal-information">
+          <a href="./join.html">회원가입</a>
+          <a href="./find.html">비밀번호 찾기</a>
+        </div>
+      </div>
+    </section>
+  
+  
+    <footer>
+      <ul>
+        <li><a href="./terms.html">이용약관</a></li>
+        <li><a href="./terms.html">개인정보처리방침</a></li>
+        <li><a href="./terms.html">상품권 이용약관</a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+  <div id="alert">
+    <p>이메일 또는 비밀번호를 확인해주세요.</p>
+  </div>
+</body>
+</html>

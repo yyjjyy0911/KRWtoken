@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주소록</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/addressBook.css">
+  <script defer src="./js/page.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-bg"></div>
+    <h1><a href="./index.html"><img src="./images/KRWTOKEN_logo.svg" alt="logo"></a></h1>
+      <nav>
+        <ul class="main-menu">
+          <li>
+            <a href="./purchase.html">구매하기</a>
+          </li>
+          <li>
+            <a href="./use.html">사용/선물</a>
+            <ul class="sub-menu">
+              <li><a href="./use.html">사용하기</a></li>
+              <li><a href="./gift.html">선물하기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./userpage.html">마이페이지</a>
+            <ul class="sub-menu">
+              <li><a href="./userpage.html">내 정보</a></li>
+              <li><a href="./detail.html">이용내역</a></li>
+              <li><a href="./addressBook.html">주소록</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./notice.html">고객센터</a>
+            <ul class="sub-menu">
+              <li><a href="./notice_none.html">공지사항</a></li>
+              <li><a href="./inquiry.html">1:1 문의</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="login-menu">
+        <li><a href="./login.html">로그인</a></li>
+        <li><div></div></li>
+        <li><a href="./join.html">회원가입</a></li>
+      </ul>
+  </header>
+
+
+  <section id="contents-box">
+    <h2>주소록</h2>
+
+    <div id="contents">
+      <div class="add">
+        <h3>주소추가</h3>
+        <div>
+          <div class="add-box">
+            <h4>닉네임</h4>
+            <input type="text">
+          </div>
+          <div class="add-box">
+            <h4>상품권 주소</h4>
+            <input type="text">
+          </div>
+        </div>
+        <button class="btn">
+          <p>추가</p>
+        </button>
+      </div>
+
+      <div class="address">
+        <h3>내 주소</h3>
+        <table>
+          <thead>
+            <tr>
+              <!-- <th><input type="checkbox" id="myCheck" onchange="checkAll(this)" onclick="selectAll(this)"><label for="myCheck"></th> -->
+              <th><input type="checkbox" id="myCheck" name="allCheckBtn" onclick="selectAll(this)"><label for="myCheck"></th>
+              <th>닉네임</th>
+              <th>상품권 주소</th>
+            </tr>
+          </thead>
+          <tbody class="table-box1">
+            <tr>
+              <td><input type="checkbox" id="myCheck1" name="checkBtn" onclick="checkSelectAll()"><label for="myCheck1"></label></td>
+              <td>유주영입니다아아아아</td>
+              <td><span>0x1f90</span>90aaE28b8a3dCeaDf281B0F12828e67<span>6c326</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="myCheck2" name="checkBtn" onclick="checkSelectAll()"><label for="myCheck2"></label></td>
+              <td>강하늘</td>
+              <td><span>0x1f90</span>90aaE28b8a3dCeaDf281B0F12828e67<span>6c326</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="myCheck3" name="checkBtn" onclick="checkSelectAll()"><label for="myCheck3"></label></td>
+              <td>주현재 과장님</td>
+              <td><span>0x1f90</span>90aaE28b8a3dCeaDf281B0F12828e67<span>6c326</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="myCheck4" name="checkBtn" onclick="checkSelectAll()"><label for="myCheck4"></label></td>
+              <td>강하늘</td>
+              <td><span>0x1f90</span>90aaE28b8a3dCeaDf281B0F12828e67<span>6c326</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="myCheck5" name="checkBtn" onclick="checkSelectAll()"><label for="myCheck5"></label></td>
+              <td>강하늘</td>
+              <td><span>0x1f90</span>90aaE28b8a3dCeaDf281B0F12828e67<span>6c326</span></td>
+            </tr>
+          </tbody>
+
+          <tbody class="table-box2 hide">
+            <tr>
+              <td><input type="checkbox" id="myCheck11" name="checkBtn" onclick="checkSelectAll()" class=" hide"><label for="myCheck11"></label></td>
+              <td>유주영입니다아아아아</td>
+              <td><span>0x1f90</span>90aaE28b8a3dCeaDf281B0F12828e67<span>6c326</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="myCheck12" name="checkBtn" onclick="checkSelectAll()" class=" hide"><label for="myCheck12"></label></td>
+              <td>주현재 과장님</td>
+              <td><span>0x1f90</span>90aaE28b8a3dCeaDf281B0F12828e67<span>6c326</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="myCheck13" name="checkBtn" onclick="checkSelectAll()" class=" hide"><label for="myCheck13"></label></td>
+              <td>주현재 과장님</td>
+              <td><span>0x1f90</span>90aaE28b8a3dCeaDf281B0F12828e67<span>6c326</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="myCheck14" name="checkBtn" onclick="checkSelectAll()" class=" hide"><label for="myCheck14"></label></td>
+              <td>주현재 과장님</td>
+              <td><span>0x1f90</span>90aaE28b8a3dCeaDf281B0F12828e67<span>6c326</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="myCheck15" name="checkBtn" onclick="checkSelectAll()" class=" hide"><label for="myCheck15"></label></td>
+              <td>주현재 과장님</td>
+              <td><span>0x1f90</span>90aaE28b8a3dCeaDf281B0F12828e67<span>6c326</span></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <button>삭제</button>
+
+        <ul>
+          <a href="#" class="active"><img src="./images/arrow-icon_l.svg" alt="arrow-icon"></a>
+          <li><a href="#" class="active btn1" onclick="reset()">1</a></li>
+          <li class="btn2" onclick="reset()"><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <a href="#" class="active"><img src="./images/arrow-icon_r.svg" alt="arrow-icon"></a>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="inner">
+      <div class="address">
+        <a href="./index.html"><img src="./images/foot-logo.svg" alt="foot-logo"></a>
+        <p>(주)더비에스코리아</p>
+        <p>대표자: 전승한</p>
+        <p>사업자등록번호 763-88-01923</p>
+        <p>주소: 서울특별시 강남구 논현로 146길 21(논현동)</p>
+        <p>고객센터: helpcustomernaver.com</p>
+        <p class="copyright">
+          &copy; thebskorea
+        </p>
+      </div>      
+
+      <ul class="terms-menu">
+        <li><a href="./terms.html">개인정보처리방침</a></li>
+        <li><a href="./terms.html">서비스 이용약관 및 정책</a></li>
+        <li><a href="./terms.html">상품권 이용약관</a></li>
+      </ul> 
+
+      <ul class="user-menu">
+        <li><a href="./notice.html">고객센터</a></li>
+        <li>
+          <a href="#">제휴 문의</a>
+          <span>thebskorea@gmail.com</span>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script>
+    document.querySelector('.btn2').addEventListener('click', () => {
+      document.querySelector('.table-box1').classList.add('hide');
+      document.querySelector('.table-box2').classList.remove('hide');
+      /* document.querySelector('.table-box1 input').classList.add('hide');
+      document.querySelector('.table-box2 input').classList.remove('hide'); */
+    });
+    document.querySelector('.btn1').addEventListener('click', () => {
+      document.querySelector('.table-box1').classList.remove('hide');
+      document.querySelector('.table-box2').classList.add('hide');
+      /* document.querySelector('.table-box1 input').classList.remove('hide');
+      document.querySelector('.table-box2 input').classList.add('hide'); */
+    });
+
+
+    /* const checkAll = (target) => {
+    const isChecked = target.checked;
+      
+    document.querySelectorAll(`tbody input`)
+      .forEach(el => {
+          el.checked = isChecked;
+      }); 
+    } */
+
+
+    // check box 개별선택, 모두선택
+    function checkSelectAll() {
+      const visibleCheckboxes = document.querySelectorAll('tbody input[name="checkBtn"]:not(.hide):checked');
+      const selectAll = document.querySelector('input[name="allCheckBtn"]');
+
+      // 전체 체크박스는 보이는 행의 개별체크박스 개수로 제어
+      selectAll.checked = visibleCheckboxes.length === 5;
+
+      // 모든 개별 체크박스가 보이는 체크박스일 경우, 전체 체크박스 체크
+      if (visibleCheckboxes.length === document.querySelectorAll('tbody input[name="checkBtn"]:not(.hide)').length) {
+        selectAll.checked = true;
+      }
+    }
+
+    function selectAll(selectAll)  {
+      const checkboxes 
+        = document.querySelectorAll('tbody input');
+      
+      checkboxes.forEach((checkbox) => {
+        checkbox.checked = selectAll.checked;
+      });
+    }
+
+
+    // check box 초기화
+    function reset(){
+      let obj = document.querySelectorAll('input');
+
+      for (let i = 0; i < obj.length; i++) {
+        obj[i].checked = false;
+      }
+    }
+
+
+    /* if(document.querySelectorAll('tbody input').checked){
+      document.querySelector('thead input').checked = true;
+    } else {
+      document.querySelector('thead input').checked = false;
+    } */
+  </script>
+</body>
+</html>

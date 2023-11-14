@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사용/선뮬</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/gift.css">
+  <script defer src="./js/page.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-bg"></div>
+    <h1><a href="./index.html"><img src="./images/KRWTOKEN_logo.svg" alt="logo"></a></h1>
+      <nav>
+        <ul class="main-menu">
+          <li>
+            <a href="./purchase.html">구매하기</a>
+          </li>
+          <li>
+            <a href="./use.html">사용/선물</a>
+            <ul class="sub-menu">
+              <li><a href="./use.html">사용하기</a></li>
+              <li><a href="./gift.html">선물하기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./userpage.html">마이페이지</a>
+            <ul class="sub-menu">
+              <li><a href="./userpage.html">내 정보</a></li>
+              <li><a href="./detail.html">이용내역</a></li>
+              <li><a href="./addressBook.html">주소록</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./notice.html">고객센터</a>
+            <ul class="sub-menu">
+              <li><a href="./notice_none.html">공지사항</a></li>
+              <li><a href="./inquiry.html">1:1 문의</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="login-menu">
+        <li><a href="./login.html">로그인</a></li>
+        <li><div></div></li>
+        <li><a href="./join.html">회원가입</a></li>
+      </ul>
+  </header>
+
+  
+  <section id="title">
+    <h2>사용·선물</h2>
+    <div>
+      <a href="./use.html">사용하기</a>
+      <a href="./gift.html" class="active">선물하기</a>
+    </div>
+  </section>
+
+
+  <section id="contents">
+    <div class="enter-amount">
+      <input type="number" placeholder="선물 금액을 입력해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder = '선물 금액을 입력해주세요.'">
+      <ul>
+        <li>보유금액 :</li>
+        <li>1,000,000</li>
+        <li>원</li>
+      </ul>
+      <p>최소선물금액 : 1천 원 / 수수료 300 원</p>
+    </div>
+    <div class="first">
+      <div class="sub-title">
+        <span>1</span>
+        <h3>상품권 금액을 선택해주세요.</h3>
+      </div>
+      <div class="amount">
+        <button><p>+ 1천원</p></button>
+        <button><p>+ 5천원</p></button>
+        <button><p>+ 1만원</p></button>
+        <button><p>+ 3만원</p></button>
+        <button><p>+ 5만원</p></button>
+        <button><p>초기화</p></button>
+      </div>
+    </div>
+
+    <div class="second">
+      <div class="sub-title">
+        <span>2</span>
+        <h3>선물 보낼 방법을 선택해주세요.</h3>
+        <a href="./addressBook.html" target="_blank"><p>주소록 관리</p></a>
+      </div>
+      <div class="text-box box1">
+        <p>상품권 주소</p>
+        <input type="text">
+        <button><img src="./images/radio.svg" alt="radio" class="radio-icon"></button>
+      </div>
+      <div class="text-box box2">
+        <p>휴대폰 번호</p>
+        <input type="text">
+        <button><img src="./images/radio.svg" alt="radio" class="radio-icon"></button>
+      </div>
+    </div>
+
+    <div class="third">
+      <div>
+        <div class="third-title">
+          <h3>내 주소</h3>
+          <p>+ 2개</p>
+          <button  class="arrow-icon" onclick="styleAdd()"><img src="./images/arrow-icon.svg" alt="arrow-icon"></button>
+        </div>
+
+        <div class="wallet-address">
+          <div class="user hide">
+            <h4>주현재 과장님</h4>
+            <div class="address-box">
+              <p>0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326</p>
+            </div>
+            <button class="icon"><img src="./images/Star.svg" alt="star" class="star-icon"></button>
+          </div>
+          <div class="user hide">
+            <h4>주현재 과장님</h4>
+            <div class="address-box">
+              <p>0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326</p>
+            </div>
+            <button class="icon"><img src="./images/Star.svg" alt="star" class="star-icon"></button>
+          </div>
+          <div class="user hide">
+            <h4>주현재 과장님</h4>
+            <div class="address-box">
+              <p>0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326</p>
+            </div>
+            <button class="icon"><img src="./images/Star-fill.svg" alt="star" class="star-icon"></button>
+          </div>
+          <div class="user hide">
+            <h4>주현재 과장님</h4>
+            <div class="address-box">
+              <p>0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326</p>
+            </div>
+            <button class="icon"><img src="./images/Star-fill.svg" alt="star" class="star-icon"></button>
+          </div>
+          <div class="user hide">
+            <h4>주현재 과장님</h4>
+            <div class="address-box">
+              <p>0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326</p>
+            </div>
+            <button class="icon"><img src="./images/Star-fill.svg" alt="star" class="star-icon"></button>
+          </div>
+          <div class="user hide">
+            <h4>주현재 과장님</h4>
+            <div class="address-box">
+              <p>0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326</p>
+            </div>
+            <button class="icon"><img src="./images/Star-fill.svg" alt="star" class="star-icon"></button>
+          </div>
+          <div class="user hide">
+            <h4>주현재 과장님</h4>
+            <div class="address-box">
+              <p>0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326</p>
+            </div>
+            <button class="icon"><img src="./images/Star-fill.svg" alt="star" class="star-icon"></button>
+          </div>
+          <div class="user hide">
+            <h4>주현재 과장님</h4>
+            <div class="address-box">
+              <p>0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326</p>
+            </div>
+            <button class="icon"><img src="./images/Star-fill.svg" alt="star" class="star-icon"></button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>최근 보낸 주소</h3>
+        <div class="wallet-address">
+          <div class="user">
+            <h4>유주영입니다아아아아</h4>
+            <div class="address-box">
+              <p>0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326</p>
+            </div>
+            <button class="radio"><img src="./images/star.svg" alt="star" class="star-icon"></button>
+          </div>
+          <div class="user">
+            <h4>주현재 과장님</h4>
+            <div class="address-box">
+              <p>0x1f9090aaE28b8a3dCeaDf281B0F12828e676c326</p>
+            </div>
+            <button class="radio"><img src="./images/star.svg" alt="star" class="star-icon"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn modal-open">
+      <p>다음</p>
+    </button>
+  </section>
+
+
+  <footer>
+    <div class="inner">
+      <div class="address">
+        <a href="./index.html"><img src="./images/foot-logo.svg" alt="foot-logo"></a>
+        <p>(주)더비에스코리아</p>
+        <p>대표자: 전승한</p>
+        <p>사업자등록번호 763-88-01923</p>
+        <p>주소: 서울특별시 강남구 논현로 146길 21(논현동)</p>
+        <p>고객센터: helpcustomernaver.com</p>
+        <p class="copyright">
+          &copy; thebskorea
+        </p>
+      </div>      
+
+      <ul class="terms-menu">
+        <li><a href="./terms.html">개인정보처리방침</a></li>
+        <li><a href="./terms.html">서비스 이용약관 및 정책</a></li>
+        <li><a href="./terms.html">상품권 이용약관</a></li>
+      </ul> 
+
+      <ul class="user-menu">
+        <li><a href="./notice.html">고객센터</a></li>
+        <li>
+          <a href="#">제휴 문의</a>
+          <span>thebskorea@gmail.com</span>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <div id="modal">
+    <div>
+      <p>휴대폰 번호를 찾을 수 없습니다.</p>
+      <a href="#" id="close">확인</a>
+    </div>
+    <div class="modal-layer"></div>
+  </div>
+
+
+  <script>
+    /* function toggleImg() {
+      const img = document.getElementById("icon");
+      if(img.src.mach("checked")){
+        img.src = "./images/radio.svg";
+      } else{
+        img.src = "./images/radio-checked.svg";
+      }
+    } */
+
+    const radioBtn = document.querySelector('.radio-icon');
+    const starBtn = document.querySelector('.star-icon');
+    
+    let clicked = 1;
+    radioBtn.onclick = function(){
+      if(clicked){
+        clicked = 0;
+        radioBtn.src = "./images/radio-checked.svg";
+      } else{
+        clicked = 1;
+        radioBtn.src = "./images/radio.svg";
+      }
+    }
+
+    starBtn.onclick = function(){
+      if(clicked){
+        clicked = 0;
+        starBtn.src = "./images/star-fill.svg"
+      } else{
+        clicked = 1;
+        starBtn.src = "./images/star.svg"
+      }
+    }
+
+  /* for (const i = 0; i < img.length; i++) {
+    const item = img.item(i);
+  } */
+  </script>
+</body>
+</html>

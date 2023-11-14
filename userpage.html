@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마이페이지</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/userpage.css">
+  <script defer src="./js/page.js"></script>
+  <script defer src="./js/userpage.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-bg"></div>
+    <h1><a href="./index.html"><img src="./images/KRWTOKEN_logo.svg" alt="logo"></a></h1>
+      <nav>
+        <ul class="main-menu">
+          <li>
+            <a href="./purchase.html">구매하기</a>
+          </li>
+          <li>
+            <a href="./use.html">사용/선물</a>
+            <ul class="sub-menu">
+              <li><a href="./use.html">사용하기</a></li>
+              <li><a href="./gift.html">선물하기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./userpage.html">마이페이지</a>
+            <ul class="sub-menu">
+              <li><a href="./userpage.html">내 정보</a></li>
+              <li><a href="./detail.html">이용내역</a></li>
+              <li><a href="./addressBook.html">주소록</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./notice.html">고객센터</a>
+            <ul class="sub-menu">
+              <li><a href="./notice_none.html">공지사항</a></li>
+              <li><a href="./inquiry.html">1:1 문의</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="login-menu">
+        <li><a href="./login.html">로그인</a></li>
+        <li><div></div></li>
+        <li><a href="./join.html">회원가입</a></li>
+      </ul>
+  </header>
+
+
+  <section id="contents">
+    <h2>마이페이지</h2>
+
+    <div class="contents-box">
+      <div class="user-information">
+        <button><img src="./images/user-qr.svg" alt="user-qr"></button>
+        <div>
+          <h3>유주영 <span>님</span></h3>
+          <div class="user">
+            <p>상품권 주소 :</p>
+            <p>0x4675C7e5BaAFBFFbca748158bEcBA61ef3b0a263</p>
+            <button class="address-copy"><img src="./images/copy.svg" alt="copy"></button>
+          </div>
+          <div>
+            <p>보유금액 :</p>
+            <p class="text-bold">100,000</p>
+            <p class="text-bold">원</p>
+          </div>
+        </div>
+        <button class="copy">
+          <p>복사</p>
+        </button>
+      </div>
+
+      <div class="text-box">
+        <div class="text">
+          <p>닉네임</p>
+          <div>
+            <input type="text" placeholder="닉네임" onfocus="this.placeholder = ''" onblur="this.placeholder = '닉네임'">
+          </div>
+        </div>
+
+        <div class="text">
+          <p>이메일</p>
+          <div>
+            <input type="email" placeholder="이메일" onfocus="this.placeholder = ''" onblur="this.placeholder = '이메일'">
+          </div>
+        </div>
+
+        <div class="text">
+          <p>휴대폰 번호</p>
+          <div>
+            <input type="number" placeholder="휴대폰 번호" onfocus="this.placeholder = ''" onblur="this.placeholder = '휴대폰 번호'">
+          </div>
+        </div>
+
+        <div class="text">
+          <p>비밀번호</p>
+          <div>
+            <input type="password" placeholder="비밀번호 재설정" onfocus="this.placeholder = ''" onblur="this.placeholder = '비밀번호 재설정'" disabled class="click">
+            <button class="password-reset">변경</button>
+          </div>
+        </div>
+
+        <div class="text">
+          <p>주소</p>
+          <div>
+            <input type="text" placeholder="주소" onfocus="this.placeholder = ''" onblur="this.placeholder = '주소'" disabled class="click">
+            <button class="change-btn">변경</button>
+          </div>
+          <div class="bts">
+            <button class="close">취소</button>
+            <button class="close">저장</button>
+          </div>
+        </div>
+
+        <button class="btn">
+          <p>수정하기</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="inner">
+      <div class="address">
+        <a href="./index.html"><img src="./images/foot-logo.svg" alt="foot-logo"></a>
+        <p>(주)더비에스코리아</p>
+        <p>대표자: 전승한</p>
+        <p>사업자등록번호 763-88-01923</p>
+        <p>주소: 서울특별시 강남구 논현로 146길 21(논현동)</p>
+        <p>고객센터: helpcustomernaver.com</p>
+        <p class="copyright">
+          &copy; thebskorea
+        </p>
+      </div>      
+
+      <ul class="terms-menu">
+        <li><a href="./terms.html">개인정보처리방침</a></li>
+        <li><a href="./terms.html">서비스 이용약관 및 정책</a></li>
+        <li><a href="./terms.html">상품권 이용약관</a></li>
+      </ul> 
+
+      <ul class="user-menu">
+        <li><a href="./notice.html">고객센터</a></li>
+        <li>
+          <a href="#">제휴 문의</a>
+          <span>thebskorea@gmail.com</span>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <div id="popup">
+    <div class="popup-item">
+      <h2>비밀번호 재설정</h2>
+      <div class="item-box">
+        <input type="number" placeholder="비밀번호" onfocus="this.placeholder = ''" onblur="this.placeholder = '비밀번호'">
+        <p>비밀번호는 6자리 숫자로 입력해주세요.</p>
+      </div>
+      <div class="item-box">
+        <input type="password" placeholder="비밀번호 확인" onfocus="this.placeholder = ''" onblur="this.placeholder = '비밀번호 확인'" class="error">
+        <p class="error-message">비밀번호와 비밀번호 확인이 일치하지 않습니다.</p>
+      </div>
+      <div class="bts">
+        <button class="btn cancel">
+          <p>취소하기</p>
+        </button>
+        <button class="btn">
+          <p>변경하기</p>
+        </button>
+      </div>
+    </div>
+    <div class="popup-layer"></div>
+  </div>
+
+
+  <div id="toast_message" class="toast_message1">
+    <img src="./images/information.svg" alt="information">
+    <p>QR 코드가 복사되었습니다.</p>
+  </div>
+
+
+  <div id="toast_message" class="toast_message2">
+    <img src="./images/information.svg" alt="information">
+    <p>상품권 주소가 복사되었습니다.</p>
+  </div>
+</body>
+</html>

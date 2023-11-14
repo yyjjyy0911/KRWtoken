@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1:1 문의</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/inquiryText_writing.css">
+  <script defer src="./js/page.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-bg"></div>
+    <h1><a href="./index.html"><img src="./images/KRWTOKEN_logo.svg" alt="logo"></a></h1>
+      <nav>
+        <ul class="main-menu">
+          <li>
+            <a href="./purchase.html">구매하기</a>
+          </li>
+          <li>
+            <a href="./use.html">사용/선물</a>
+            <ul class="sub-menu">
+              <li><a href="./use.html">사용하기</a></li>
+              <li><a href="./gift.html">선물하기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./userpage.html">마이페이지</a>
+            <ul class="sub-menu">
+              <li><a href="./userpage.html">내 정보</a></li>
+              <li><a href="./detail.html">이용내역</a></li>
+              <li><a href="./addressBook.html">주소록</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./notice.html">고객센터</a>
+            <ul class="sub-menu">
+              <li><a href="./notice_none.html">공지사항</a></li>
+              <li><a href="./inquiry.html">1:1 문의</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="login-menu">
+        <li><a href="./login.html">로그인</a></li>
+        <li><div></div></li>
+        <li><a href="./join.html">회원가입</a></li>
+      </ul>
+  </header>
+
+  
+  <section id="title">
+    <h2>고객센터</h2>
+    <div>
+      <a href="./notice.html">공지사항</a>
+      <a href="./inquiry.html" class="active">1:1 문의</a>
+      <a href="./faq.html">FAQ</a>
+    </div>
+  </section>
+
+
+  <section id="contents">
+    <input type="text" placeholder="제목을 입력하세요." onfocus="this.placeholder = ''" onblur="this.placeholder = '제목을 입력하세요.'">
+    <div class="border"></div>
+    <textarea name="writing" id="writing" cols="20" placeholder="내용을 입력하세요." onfocus="this.placeholder = ''" onblur="this.placeholder = '내용을 입력하세요.'"></textarea>
+
+    <div class="bts">
+      <button class="btn"><p>취소</p></ㅠ>
+      <button class="btn"><p>등록</p></ㅠ>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="inner">
+      <div class="address">
+        <a href="./index.html"><img src="./images/foot-logo.svg" alt="foot-logo"></a>
+        <p>(주)더비에스코리아</p>
+        <p>대표자: 전승한</p>
+        <p>사업자등록번호 763-88-01923</p>
+        <p>주소: 서울특별시 강남구 논현로 146길 21(논현동)</p>
+        <p>고객센터: helpcustomernaver.com</p>
+        <p class="copyright">
+          &copy; thebskorea
+        </p>
+      </div>      
+
+      <ul class="terms-menu">
+        <li><a href="./terms.html">개인정보처리방침</a></li>
+        <li><a href="./terms.html">서비스 이용약관 및 정책</a></li>
+        <li><a href="./terms.html">상품권 이용약관</a></li>
+      </ul> 
+
+      <ul class="user-menu">
+        <li><a href="./notice.html">고객센터</a></li>
+        <li>
+          <a href="#">제휴 문의</a>
+          <span>thebskorea@gmail.com</span>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <div id="modal">
+    <div>
+      <p>등록하시겠습니까?</p>
+      <div class="bts">
+        <a href="#" id="close">취소</a>
+        <a href="./inquiryText_w.html">확인</a>
+      </div>
+    </div>
+    <div class="modal-layer"></div>
+  </div>
+</body>
+</html>

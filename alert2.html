@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alert2</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+    body{font-family: 'Noto Sans KR', sans-serif;}
+
+    
+    /* alert */
+    #alert > div{width: 360px;height: 156px;background: #fff;position: fixed;top: 0px;bottom: 0;left: 0;right: 0;margin: auto;z-index: 50;border-radius: 10px;}
+    #alert p{text-align: center;font-size: 16px;line-height: 1.5;height: 100px;line-height: 100px;}
+    #alert div > .bts{width: 100%;height: 56px;border-top: 1px solid #dcdcdc;color: #000;text-align: center;line-height: 56px;display: flex;}
+    #alert div > a{width: 50%;}
+    #alert div > a:last-of-type{border-left: 1px solid #dcdcdc;}
+
+    #alert .alert-layer{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.7);
+      z-index: 10;}
+  </style>
+</head>
+<body>
+  <div id="alert">
+    <div>
+      <p>변경하시겠습니까?</p>
+      <div class="bts">
+        <a href="#" id="close">취소</a>
+        <a href="#">확인</a>
+      </div>
+    </div>
+    <div class="alert-layer"></div>
+  </div>
+</body>
+</html>

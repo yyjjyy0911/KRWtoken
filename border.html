@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border</title>
+  <style>
+    *{box-sizing: border-box;}
+    input{padding: 8px 0;font-size: 16px;margin: 0;outline: none;border: none;}
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-text-fill-color: #000;
+      -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+      box-shadow: 0 0 0px 1000px #fff inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .one{border-bottom: 1px solid #777;color: #777;}
+    .two{border-bottom: 2px solid #000;color: #000;}
+    .three{border-bottom: 2px solid #000;color: #000;}
+    .four{border-bottom: 1px solid #777;color: #000;}
+    .five{border-bottom: 2px solid #EA3323;color: #000;}
+    .six{border-bottom: 2px solid #000;color: #000;}
+
+    .total{
+      border-bottom: 1px solid #777;
+
+    }
+    .total:focus{
+      border-bottom: 2px solid #000;
+    }
+    .total::placeholder{color: #777;}
+  </style>
+</head>
+<body>
+  <div>
+    <h4>1. 기본 인풋박스</h4>
+    <input type="text" placeholder="테스트" class="one">
+  </div>
+
+  <div>
+    <h4>2. 포커스 인 상태</h4>
+    <input type="text" placeholder="테스트" class="two">
+  </div>
+
+  <div>
+    <h4>3. 텍스트 입력 시</h4>
+    <input type="text" placeholder="테스트" class="three">
+  </div>
+
+  <div>
+    <h4>4. 포커스 아웃 시 - 유효 상태</h4>
+    <input type="text" placeholder="테스트" class="four">
+  </div>
+
+  <div>
+    <h4>5. 포커스 아웃 시 - invaild 상태</h4>
+    <input type="text" placeholder="테스트" class="five">
+  </div>
+
+  <div>
+    <h4>6. invaild 상태에서 포커스 인 시</h4>
+    <input type="text" placeholder="테스트" class="six">
+  </div>
+
+  <div>
+    <h4>최종</h4>
+    <input type="text" placeholder="테스트" onfocus="this.placeholder = ''" onblur="this.placeholder = '테스트'" class="total">
+    <button id="btn1">확인</button>
+    <button id="btn2">취소</button>
+  </div>
+
+  <script>
+    document.querySelector('#btn1').addEventListener('click', () => {
+      document.querySelector('.total').style.borderBottom = "2px solid #EA3323";
+    });
+    document.querySelector('#btn2').addEventListener('click', () => {
+      document.querySelector('.total').style.borderBottom = "1px solid #777";
+    });
+  </script>
+</body>
+</html>

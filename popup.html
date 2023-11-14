@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>popup</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+    body{font-family: 'Noto Sans KR', sans-serif;}
+
+    
+    /* popup -------------------------------------------- */
+    #popup h2{margin-bottom: 80px;font-size: 32px;font-weight: bold;text-align: center;}
+
+    .popup-item{
+      width: 580px;padding: 60px 70px 50px;height: 494px;border-radius: 10px;
+      background: #fff;position: fixed;top: 0px;bottom: 0;left: 0;right: 0;margin: auto;z-index: 50;
+    }
+    #popup .popup-item input{border: none;font-size: 18px;color: #777;width: 440px;height: 48px;outline: none;border-bottom: 1px solid #ccc;}
+    #popup .popup-item input:focus{border-bottom: 1px solid #000;color: #000;}
+    #popup .popup-item .item-box{margin-top: 20px;position: relative;}
+    #popup .popup-item .item-box p{position: absolute;top: 54px;left: 2px;;font-size: 14px;color: #EA3323;z-index: 2;}
+
+    #popup .bts{display: flex;justify-content: space-between;}
+    #popup .btn{width: 100%;height: 56px;background: #dcdcdc;border-radius: 10px;display: flex;align-items: center;margin: 100px auto 0px;}
+    #popup .btn:nth-of-type(2){background: #000;margin-left: 10px;}
+    #popup .btn p{font-size: 20px;font-weight: 500;color: #fff;width: 100%;text-align: center;}
+
+    .popup-layer{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.7);
+      z-index: 10;}
+  </style>
+</head>
+<body>
+  <div id="popup">
+    <div class="popup-item">
+      <h2>비밀번호 재설정</h2>
+      <div class="item-box">
+        <input type="number" placeholder="비밀번호" onfocus="this.placeholder = ''" onblur="this.placeholder = '비밀번호'">
+        <p>비밀번호는 6자리 숫자로 입력해주세요.</p>
+      </div>
+      <div class="item-box">
+        <input type="password" placeholder="비밀번호 확인" onfocus="this.placeholder = ''" onblur="this.placeholder = '비밀번호 확인'" class="error">
+        <p class="error-message">비밀번호와 비밀번호 확인이 일치하지 않습니다.</p>
+      </div>
+      <div class="bts">
+        <button class="btn cancel">
+          <p>취소하기</p>
+        </button>
+        <button class="btn">
+          <p>변경하기</p>
+        </button>
+      </div>
+    </div>
+    <div class="popup-layer"></div>
+  </div>
+
+
+  <script>
+    document.querySelector('.error').addEventListener('click', () => {
+      document.querySelector('.error-message').style.display = "block";
+    });
+  </script>
+</body>
+</html>
