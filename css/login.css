@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.inner{width: 1440px;margin: auto;}
+#wrap{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+
+
+/* section----------------------------------------------- */
+section h2{width: 200px;margin: auto;}
+section h2 img{margin: auto;}
+
+section .contents-box{margin: 40px auto 42px;width: 580px;border: 1px solid #dcdcdc;padding: 60px 70px 50px;}
+section .contents-box .text-box{display: flex;align-items: center;width: 440px;height: 48px;}
+section .contents-box .box2{margin-top: 8px;}
+
+section .contents-box .text-box input{border: none;font-size: 18px;color: #777;width: 440px;height: 48px;outline: none;border-bottom: 1px solid #ccc;}
+section .contents-box .text-box input:focus{border-bottom: 1px solid #000;color: #000;}
+
+section .contents-box .save{margin: 28px auto 48px;display: flex;align-items: center;font-size: 14px;}
+section .contents-box .save button{width: 20px;height: 20px;margin-right: 8px;}
+
+section .contents-box .tost-btn{width: 440px;height: 56px;background: #dcdcdc;border-radius: 10px;display: flex;justify-content: center;align-items: center;margin: auto;}
+section .contents-box .tost-btn:hover{background: #000;}
+section .contents-box .tost-btn p{font-size: 20px;font-weight: 500;color: #fff;}
+
+section .contents-box .personal-information{display: flex;padding-top: 26px;justify-content: space-between;}
+section .contents-box .personal-information a{font-size: 14px;}
+section .contents-box .personal-information :nth-child(1){margin-right: 20px;}
+
+
+/* footer----------------------------------------------- */
+footer{width: 100%;}
+footer ul{display: flex;justify-content: center;}
+footer ul li{padding-right: 14px;}
+footer ul li:last-child{padding-right: 0;}
+footer ul li a{font-size: 12px;}
+
+
+/* alert */
+#alert{
+  width: 400px;height: 50px;background: #191919;opacity: 0.9;border-radius: 30px;
+  position: absolute;top: 20px;left: 0;right: 0;margin: auto;z-index: 200;
+  transition: all 0.5s;box-shadow: 3px 4px 11px 0px #00000040;opacity: 1;
+  display: none;
+}
+#alert p{color: #fff;line-height: 50px;text-align: center;}
+
+#alert.active{
+  opacity: 1;
+  top: 20px;
+}

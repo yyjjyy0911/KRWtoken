@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+#wrap{width: 100%;margin: auto;}
+.inner{width: 1440px;margin: auto;}
+
+
+/* header----------------------------------------------- */
+
+/* 공통 */
+header nav li a{width: 140px;height: 50px;line-height: 50px;padding: 0px 10px;text-align: center;transition: all 0.2s;}
+
+header{width: 100%;height: 100px;position: fixed;background: rgba(255,255,255,1);z-index: 10;display: flex;align-items: center;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);}
+
+header .header-bg{
+  width: 100%;height: 200px;background: rgba(255,255,255,1);position: absolute;top: 100px;
+  display: none;
+  transition: all 0.3s;
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+header h1{width: 166px;height: 22px;margin: 34px 80px 0 75px;}
+header h1 a{width: 100%;height: 100%;}
+header h1 a img{max-width: 100%;height: 100%;}
+
+header nav{position: absolute;left: 324px;top: 50px;z-index: 5;}
+
+/* main-menu */
+header nav .main-menu{display: flex;}
+header nav .main-menu:hover .sub-menu{display: block;}
+header nav .main-menu > li > a{font-weight: bold;}
+header nav .main-menu > li > a:hover{background: rgba(0,0,0,0.2);}
+
+/* sub-menu */
+header nav .main-menu li .sub-menu{display: none;}
+header nav .main-menu li .sub-menu li a:hover{background: rgba(0,0,0,0.2);}
+
+/* login-menu */
+header .login-menu{display: flex;position: absolute;right: 75px;align-items: center;height: 20px;margin-top: 50px;}
+header .login-menu li{margin-right: 16px;}
+header .login-menu li div{width: 1px;height: 10px;background: #000;}
+header .login-menu li a{font-size: 14px;}
+
+
+/* title----------------------------------------------- */
+#title{width: 100%;height: 240px;text-align: center;line-height: 140px;border: 1px solid #777;padding-top: 100px;}
+#title h2{font-size: 36px;font-weight: bold;}
+
+
+/* contents----------------------------------------------- */
+#contents > h2{margin-bottom: 40px;font-size: 32px;font-weight: bold;text-align: center;padding-top: 160px;}
+.contents-box{width: 840px;margin: 0 auto 200px;border: 1px solid #dcdcdc;}
+
+.user-information{width: 100%;height: 230px;background: #191919;padding: 60px;display: flex;align-items: center;position: relative;}
+.user-information > button{margin-right: 30px;}
+.user-information > button:fi{cursor: inherit;}
+
+.user-information > div{flex-grow: 1;}
+.user-information > div h3{color: #fff;font-weight: bold;font-size: 24px;padding: 10px 0;}
+.user-information > div h3 span{color: #fff;font-weight: bold;font-size: 24px;}
+.user-information > div > div a{text-align: end;margin-left: 4px}
+.user-information > div > div{display: flex;justify-content: space-between;padding: 10px 0;}
+.user-information > div > div:first-of-type{border-bottom: 1px solid #fff;}
+.user-information > div > div p{color: #fff;text-align: end;padding-left: 4px;font-size: 18px;}
+.user-information > div > div p:nth-of-type(2){flex-grow: 1;}
+.user-information > div > div .text-bold{font-weight: bold;font-size: 20px;}
+
+.user-information .user button{position: absolute;right: 30px;background: none;}
+.user-information .user button img{width: 24px;height: 24px;padding-bottom: 3px;}
+
+.user-information .copy{
+  width: 110px;
+  height: 24px;border: 1px solid #fff;border-radius: 10px;
+  position: absolute;bottom: 30px;
+  display: flex;justify-content: center;align-items: center;
+  background: none;
+}
+.user-information .copy p{font-size: 14px;color: #fff;}
+
+.text-box{padding: 80px 70px 50px;width: 680px;margin: auto;}
+.text-box > div{margin-bottom: 20px;}
+.text-box > div p{font-size: 14px;color: #bebebe;margin-bottom: 10px;}
+.text-box > div div{display: flex;align-items: center;}
+
+.text-box > div div .change-btn, .password-reset{margin-left: 30px;width: 200px;height: 34px;width: 50px;border: 1px solid #bebebe;text-align: center;line-height: 34px;color: #777;border-radius: 10px;font-size: 12px;}
+.text-box > div div .change-btn:hover{background: #F4F5F7;}
+
+.text-box > div input{
+  border: none;font-size: 18px;color: #777;width: 440px;height: 48px;border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.text-box > div input:focus{border-bottom: 1px solid #000;color: #000;}
+.text-box > div .click{background: none;}
+
+.text-box .bts{width: 440px;justify-content: center;margin-top: 10px;display: none;}
+.text-box .bts button{
+  width: 100px;height: 42px;border: 1px solid #dcdcdc;border-radius: 12px;
+  text-align: center;line-height: 42px;font-size: 14px;font-weight: bold;
+}
+.text-box .bts button:last-child{background: #000;color: #fff;border: none;margin-left: 8px;}
+
+#contents .btn{width: 360px;height: 56px;background: #dcdcdc;border-radius: 10px;display: flex;justify-content: center;align-items: center;margin: 100px auto 0;}
+#contents .btn:hover{background: #000;}
+#contents .btn p{font-size: 20px;font-weight: 500;color: #fff;}
+
+
+/* footer ------------------------------------------------------- */
+footer{width: 100%;padding: 70px 0 50px;background: #000;}
+footer .inner{display: flex;}
+
+footer .address{flex-grow: 1;}
+footer .address a{width: 135px;margin-bottom: 25px;color: #fff;}
+footer .address img{width: 100%;max-width: 100%;}
+footer .address p{margin-bottom: 14px;font-size: 14px;color: #fff;}
+footer .address p:last-of-type{margin-top: 30px;}
+
+footer ul li{margin-bottom: 14px;}
+footer ul li:last-of-type{margin-bottom: 0px;}
+
+footer .terms-menu li:first-of-type{font-weight: bold;}
+.terms-menu li a{color: #fff}
+
+footer .user-menu{margin-left: 80px;}
+footer .user-menu li a{color: #fff;}
+footer .user-menu span{font-weight: bold;color: #fff;}
+footer .user-menu li span{margin-top: 14px;display: block;}
+
+
+/* popup -------------------------------------------- */
+#popup{display: none;} 
+
+#popup h2{margin-bottom: 80px;font-size: 32px;font-weight: bold;text-align: center;}
+
+.popup-item{
+  width: 580px;padding: 60px 70px 50px;height: 494px;border-radius: 10px;
+  background: #fff;position: fixed;top: 0px;bottom: 0;left: 0;right: 0;margin: auto;z-index: 50;
+}
+#popup .popup-item input{border: none;font-size: 18px;color: #777;width: 440px;height: 48px;outline: none;border-bottom: 1px solid #ccc;}
+#popup .popup-item input:focus{border-bottom: 1px solid #000;color: #000;}
+#popup .popup-item .item-box{margin-top: 20px;position: relative;}
+#popup .popup-item .item-box p{position: absolute;top: 54px;left: 2px;;font-size: 14px;color: #EA3323;z-index: 2;display: none;}
+
+#popup .bts{display: flex;justify-content: space-between;}
+#popup .btn{width: 100%;height: 56px;background: #dcdcdc;border-radius: 10px;display: flex;align-items: center;margin: 100px auto 0px;}
+#popup .btn:nth-of-type(2){background: #000;margin-left: 10px;}
+#popup .btn p{font-size: 20px;font-weight: 500;color: #fff;width: 100%;text-align: center;}
+
+.popup-layer{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.7);
+  z-index: 10;}
+
+
+/*토스트 메시지*/
+  #toast_message {
+    width: 400px;height: 50px;background: #191919;border-radius: 30px;
+    position: fixed;left: 0;right: 0;top: 0px;z-index: 200;margin: auto;
+    transition: all 0.5s;
+    box-shadow: 3px 4px 11px 0px #00000040;
+    opacity: 0;
+    display: flex;justify-content: center;align-items: center;
+  }
+  #toast_message img{width: 24px;height: 24px;position: absolute;left: 20px;}
+  #toast_message p{color: #fff;text-align: center;line-height: 50px;font-size: 14px;}
+  
+  /*토스트 메시지 활성화 되었을 때*/
+  #toast_message.active {
+      opacity: 100%;
+      top: 20px;
+  }

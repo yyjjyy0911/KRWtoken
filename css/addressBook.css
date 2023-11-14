@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+#wrap{width: 100%;margin: auto;}
+.inner{width: 1440px;margin: auto;}
+
+
+/* header----------------------------------------------- */
+
+/* 공통 */
+header nav li a{width: 140px;height: 50px;line-height: 50px;padding: 0px 10px;text-align: center;transition: all 0.2s;}
+
+header{width: 100%;height: 100px;position: fixed;background: rgba(255,255,255,1);z-index: 10;display: flex;align-items: center;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);}
+
+header .header-bg{
+  width: 100%;height: 200px;background: rgba(255,255,255,1);position: absolute;top: 100px;
+  display: none;
+  transition: all 0.3s;
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+header h1{width: 166px;height: 22px;margin: 34px 80px 0 75px;}
+header h1 a{width: 100%;height: 100%;}
+header h1 a img{max-width: 100%;height: 100%;}
+
+header nav{position: absolute;left: 324px;top: 50px;z-index: 5;}
+
+/* main-menu */
+header nav .main-menu{display: flex;}
+header nav .main-menu:hover .sub-menu{display: block;}
+header nav .main-menu > li > a{font-weight: bold;}
+header nav .main-menu > li > a:hover{background: rgba(0,0,0,0.2);}
+
+/* sub-menu */
+header nav .main-menu li .sub-menu{display: none;}
+header nav .main-menu li .sub-menu li a:hover{background: rgba(0,0,0,0.2);}
+
+/* login-menu */
+header .login-menu{display: flex;position: absolute;right: 75px;align-items: center;height: 20px;margin-top: 50px;}
+header .login-menu li{margin-right: 16px;}
+header .login-menu li div{width: 1px;height: 10px;background: #000;}
+header .login-menu li a{font-size: 14px;}
+
+
+/* title----------------------------------------------- */
+#title{width: 100%;height: 320px;text-align: center;border: 1px solid #777;padding-top: 100px;}
+#title h2{font-size: 36px;font-weight: bold;margin: 60px auto 40px;height: 40px;}
+#title div{display: flex;justify-content: center;}
+#title div a{
+  font-size: 24px;font-weight: 500;text-align: center;line-height: 50px;
+  width: 140px;height: 50px;background: #fff;border-radius: 20px;border: 1px solid #dcdcdc;margin-right: 20px;}
+#title div a:nth-last-of-type(1){margin-right: 0;}
+#title div a.active{background: #000;color: #fff;border: 1px solid #000;}
+
+
+/* contents----------------------------------------------- */
+#contents-box{margin-bottom: 200px;padding-top: 100px;}
+#contents-box h2{margin: 60px auto 40px;text-align: center;font-size: 32px;font-weight: bold;}
+#contents{width: 840px;margin: 0px auto 30px;border: 1px solid #dcdcdc;padding: 60px 70px 50px;position: relative;}
+
+/* add */
+#contents .add h3, #contents .address h3{font-size: 24px;font-weight: 700;}
+
+#contents .add{
+  padding-bottom: 50px;
+  /* border-bottom: 1px solid #dcdcdc; */
+}
+#contents .add > div{margin: 40px 0 50px;}
+#contents .add-box{display: flex;align-items: center;}
+#contents .add-box:first-of-type{margin-bottom: 30px;}
+#contents .add-box h4{width: 80px;}
+#contents input{border: none;font-size: 18px;color: #777;width: 440px;height: 40px;outline: none;border: 1px solid #ccc;border-radius: 10px;padding-left: 16px;flex-grow: 1;margin: 0 60px 0 30px;}
+#contents input:focus{border: 1px solid #000;color: #000;}
+
+/* address table */
+#contents .address{margin-top: 50px;}
+#contents .address table{margin: 35px 0 160px;width: 100%;}
+#contents .address table tr{height: 50px;}
+
+#contents .address table thead{
+  width: 100%;height: 60px;border-bottom: 1px solid #dcdcdc;border-top: 1px solid #777;
+}
+#contents .address table tr:first-child th{vertical-align : middle;}
+#contents .address table thead th:nth-of-type(2){width: 200px;padding-right: 30px;}
+#contents .address table th{font-weight: 500;}
+#contents .address table th:first-of-type{text-align: left;}
+#contents .address table th:last-of-type{padding-right: 60px;}
+
+#contents .address table td{vertical-align: middle;}
+#contents .address table td span{font-weight: bold;}
+#contents .address table td button{margin-right: 30px;}
+#contents .address table td:nth-of-type(2){width: 230px;padding-left: 30px;}
+#contents .address table td:last-of-type{margin-left: 30px;}
+
+.hide{display: none;}
+
+#contents .address > button{
+  width: 70px;height: 40px;border-radius: 10px;display: flex;justify-content: center;align-items: center;font-weight: 500;border: 1px solid #dcdcdc;color: #777;
+  position: absolute;right: 70px;bottom: 140px;
+}
+
+#contents .btn{
+  width: 360px;height: 56px;background: #dcdcdc;border-radius: 10px;
+  display: flex;justify-content: center;align-items: center;margin: 0px auto 0;
+  font-size: 20px;font-weight: 500;color: #fff;border: 0;
+}
+#contents .btn:hover{background: #000;}
+#contents .btn p{font-size: 20px;font-weight: 500;color: #fff;}
+
+#contents-box ul{display: flex;justify-content: center;align-items: center;}
+#contents-box ul li{margin-right: 20px;}
+#contents-box ul li:last-of-type{margin-right: 0;}
+#contents-box ul a:first-child img{margin-right: 30px;}
+#contents-box ul a:last-child img{margin-left: 30px;}
+#contents-box ul a{color: #777;}
+#contents-box ul a.active{color: #000;font-weight: 500;}
+
+input[type="checkbox"]+label {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url('../images/uncheckbox.svg') no-repeat 0 0px / contain;
+}
+
+input[type='checkbox']:checked+label {
+  background: url('../images/checkbox.svg') no-repeat 0 0px / contain;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+/* footer ------------------------------------------------------- */
+footer{width: 100%;padding: 70px 0 50px;background: #000;}
+footer .inner{display: flex;}
+
+footer .address{flex-grow: 1;}
+footer .address a{width: 135px;margin-bottom: 25px;color: #fff;}
+footer .address img{width: 100%;max-width: 100%;}
+footer .address p{margin-bottom: 14px;font-size: 14px;color: #fff;}
+footer .address p:last-of-type{margin-top: 30px;}
+
+footer ul li{margin-bottom: 14px;}
+footer ul li:last-of-type{margin-bottom: 0px;}
+
+footer .terms-menu li:first-of-type{font-weight: bold;}
+.terms-menu li a{color: #fff}
+
+footer .user-menu{margin-left: 80px;}
+footer .user-menu li a{color: #fff;}
+footer .user-menu span{font-weight: bold;color: #fff;}
+footer .user-menu li span{margin-top: 14px;display: block;}

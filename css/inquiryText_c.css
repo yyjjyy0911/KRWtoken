@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+#wrap{width: 100%;margin: auto;}
+.inner{width: 1440px;margin: auto;}
+
+
+/* header----------------------------------------------- */
+
+/* 공통 */
+header nav li a{width: 140px;height: 50px;line-height: 50px;padding: 0px 10px;text-align: center;transition: all 0.2s;}
+
+header{width: 100%;height: 100px;position: fixed;background: rgba(255,255,255,1);z-index: 10;display: flex;align-items: center;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);}
+
+header .header-bg{
+  width: 100%;height: 200px;background: rgba(255,255,255,1);position: absolute;top: 100px;
+  display: none;
+  transition: all 0.3s;
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+header h1{width: 166px;height: 22px;margin: 34px 80px 0 75px;}
+header h1 a{width: 100%;height: 100%;}
+header h1 a img{max-width: 100%;height: 100%;}
+
+header nav{position: absolute;left: 324px;top: 50px;z-index: 5;}
+
+/* main-menu */
+header nav .main-menu{display: flex;}
+header nav .main-menu:hover .sub-menu{display: block;}
+header nav .main-menu > li > a{font-weight: bold;}
+header nav .main-menu > li > a:hover{background: rgba(0,0,0,0.2);}
+
+/* sub-menu */
+header nav .main-menu li .sub-menu{display: none;}
+header nav .main-menu li .sub-menu li a:hover{background: rgba(0,0,0,0.2);}
+
+/* login-menu */
+header .login-menu{display: flex;position: absolute;right: 75px;align-items: center;height: 20px;margin-top: 50px;}
+header .login-menu li{margin-right: 16px;}
+header .login-menu li div{width: 1px;height: 10px;background: #000;}
+header .login-menu li a{font-size: 14px;}
+
+
+/* title----------------------------------------------- */
+#title{width: 100%;height: 320px;text-align: center;border: 1px solid #777;padding-top: 100px;}
+#title h2{font-size: 36px;font-weight: bold;margin: 60px auto 40px;height: 40px;}
+#title div{display: flex;justify-content: center;}
+#title div a{
+  font-size: 24px;font-weight: 500;text-align: center;line-height: 50px;
+  width: 140px;height: 50px;background: #fff;border-radius: 20px;border: 1px solid #dcdcdc;margin-right: 20px;}
+#title div a:nth-last-of-type(1){margin-right: 0;}
+#title div a.active{background: #000;color: #fff;border: 1px solid #000;}
+
+
+/* contents----------------------------------------------- */
+#contents{width: 840px;margin: 60px auto 200px;border: 1px solid #dcdcdc;padding: 60px 70px 50px;}
+
+#contents .total{display: flex;width: 100%;height: 50px;background: #f4f5f7;align-items: center;border-radius: 10px;padding: 13px 16px;}
+#contents .total h4{font-weight: 500;}
+
+#contents .mini-title{padding-bottom: 30px;display: flex;justify-content: space-between;border-bottom: 1px solid #dcdcdc;align-items: center;}
+
+#contents .mini-title .text p{font-size: 18px;color: #bebebe;}
+#contents .mini-title .text p:first-of-type{font-size: 20px;font-weight: 500;margin-bottom: 20px;color: #000;}
+#contents .mini-title button{padding: 8px 16px;border: 1px solid #999;border-radius: 10px;color: #999;font-weight: 500;cursor: inherit;}
+#contents .mini-title button.active{color: #000;border: 1px solid #000;}
+
+#contents .writing{margin: 40px 0 100px;line-height: 1.5;}
+#contents .writing p{margin-bottom: 20px;}
+#contents .writing p:last-of-type{margin-bottom: 0px;}
+
+#contents .bts{display: flex;justify-content: space-between;}
+#contents .btn{width: 70px;height: 40px;background: #F4F5F7;border-radius: 10px;display: flex;justify-content: center;align-items: center;font-weight: 500;}
+
+#contents .answer{margin: 60px 0 80px;line-height: 1.5;padding: 30px 20px;background: #f4f5f7;border-radius: 5px;}
+#contents .answer p{margin-bottom: 20px;}
+#contents .answer p:last-of-type{margin-bottom: 0px;}
+
+
+/* footer ------------------------------------------------------- */
+footer{width: 100%;padding: 70px 0 50px;background: #000;}
+footer .inner{display: flex;}
+
+footer .address{flex-grow: 1;}
+footer .address a{width: 135px;margin-bottom: 25px;color: #fff;}
+footer .address img{width: 100%;max-width: 100%;}
+footer .address p{margin-bottom: 14px;font-size: 14px;color: #fff;}
+footer .address p:last-of-type{margin-top: 30px;}
+
+footer ul li{margin-bottom: 14px;}
+footer ul li:last-of-type{margin-bottom: 0px;}
+
+footer .terms-menu li:first-of-type{font-weight: bold;}
+.terms-menu li a{color: #fff}
+
+footer .user-menu{margin-left: 80px;}
+footer .user-menu li a{color: #fff;}
+footer .user-menu span{font-weight: bold;color: #fff;}
+footer .user-menu li span{margin-top: 14px;display: block;}
